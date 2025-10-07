@@ -34,7 +34,8 @@ body {
   --color-gris-10: #80828D;
   --color-gris-11: #62636C;
   --color-gris-12: #1E1F24;
-  --color-vert: #00E074;
+  --color-vert-9: #00E074;
+  --color-vert-8: #33C26C;
   --color-rouge: #FF1474;
   --color-jaune: #FFDC10;
   --breakpoint-xs: 30rem;
@@ -65,3 +66,9 @@ body {
   }
 }
 
+@utility bubble-bg {
+  background-image: url("../../public/bubble-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
