@@ -1,9 +1,9 @@
 "use client"
 import FooterSection from "@/components/accueil/footer"
 import Navbar from "@/components/navigation/navbar"
-import BodyService from "@/components/services/bodyService"
-import HeroService from "@/components/services/heroService"
-import ProcessSection from "@/components/services/processSection"
+import BodyService from "@/components/service/bodyService"
+import HeroService from "@/components/service/heroService"
+import ProcessSection from "@/components/service/processSection"
 
 const Services = () => {
     return (

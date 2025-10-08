@@ -10,7 +10,7 @@ const HeroService = () => {
             <div className="w-full flex flex-col items-center justify-center gap-6">
                 <h1 className="text-5xl text-gris-12 font-semibold text-center max-md:text-4xl">Des services pensés pour booster votre réussite</h1>
                 <p className="w-3/5 text-2xl text-gris-12 font-normal text-center max-xl:w-full max-md:text-xl">
-                    Nos solutions allient simplicité et efficacité pour répondre à vos besoins.
+                    Nos solutions allient simplicité et efficacité pour répondre à vos besoins. 
                     Avec nous, gagnez en performance et en sérénité.
                 </p>
                 <div className="flex items-center justify-center gap-4 max-md:w-full max-md:flex-col">
