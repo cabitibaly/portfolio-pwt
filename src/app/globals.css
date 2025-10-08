@@ -72,3 +72,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@utility avis-bg {
+  background-image: url("../../public/commentaire-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
