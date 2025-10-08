@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div className={`overflow-auto p-4 absolute top-0 left-0 w-screen h-screen bg-gris-1 flex-col items-center justify-start gap-4 ${isOpen ? "flex" : "hidden"}`}>
                     <div className="w-full flex justify-end">
                         <button onClick={() => setIsOpen(!isOpen)} className="cursor-pointer">
-                            <X strokeWidth={1} className="stroke-gris-12 size-8"/>
+                            <X strokeWidth={1} className="stroke-gris-12 size-16"/>
                         </button>                                                
                     </div>
                     <ul className="w-full flex-1 flex flex-col items-center justify-center gap-10">

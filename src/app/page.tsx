@@ -1,6 +1,7 @@
 "use client"
 import AproposSection from "@/components/accueil/aproposSection"
 import AvisSection from "@/components/accueil/avisSection"
+import FooterSection from "@/components/accueil/footer"
 import Hero from "@/components/accueil/hero"
 import ProjetSection from "@/components/accueil/projetSection"
 import ServiceSection from "@/components/accueil/serviceSection"
@@ -15,6 +16,7 @@ const Accueil = () => {
             <ProjetSection /> 
             <AproposSection />
             <AvisSection />
+            <FooterSection />
         </>
     )
 }

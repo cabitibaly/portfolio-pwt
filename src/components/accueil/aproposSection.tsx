@@ -5,7 +5,7 @@ import InfoCard from "../cards/infoCard"
 
 const AproposSection = () => {
     return (
-        <section className="overflow-hidden relative top-0 bg-bleu-2 w-full h-screen flex items-center justify-center">
+        <section className="overflow-hidden relative top-0 bg-bleu-2 w-screen h-screen flex items-center justify-center">
             <div className="sticky top-0 z-0 w-full h-full flex items-center justify-center">
                 <div className="absolute w-full h-full flex items-center justify-center">
                     <div className="animate-blob absolute left-1/12 translate-x-1/2 w-1/3 aspect-square rounded-full bg-bleu-9 filter blur-[20px] max-lg:w-2/5 max-lg:-left-[6%] max-md:translate-none max-md:left-0 max-md:w-2/3"></div>
