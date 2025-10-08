@@ -6,8 +6,8 @@ const CallToAction = () => {
     return (
         <div className="border border-bleu-1/40 p-6 bg-bleu-9/10 backdrop-blur-[35px] rounded-xl w-full flex items-center justify-center gap-8">
             <div className="w-3/5 flex flex-col items-center justify-start gap-6 max-xl:w-full">
-                <h3 className="text-center text-4xl text-gris-12 font-medium max-lg:text-3xl max-sm:text-2xl">Et si on transformait votre projet en réalité dès aujourd'hui ?</h3>
-                <span className="text-center text-2xl text-gris-10 font-normal max-lg:text-xl">
+                <h3 className="text-center text-4xl text-gris-1 font-medium max-lg:text-3xl max-sm:text-2xl">Et si on transformait votre projet en réalité dès aujourd'hui ?</h3>
+                <span className="text-center text-2xl text-gris-1 font-normal max-lg:text-xl">
                     De l’idée à l’action, nous vous accompagnons pour concrétiser vos ambitions. Prêt à passer à l’étape suivante ?
                 </span>
                 <Link 

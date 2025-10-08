@@ -86,3 +86,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@utility gallerie-bg {
+  background-image: url("../../public/gallerie-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+}
