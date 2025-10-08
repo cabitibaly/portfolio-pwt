@@ -10,9 +10,9 @@ interface ServiceProps {
 const ServiceCard = ({titre, image}: ServiceProps) => {
     return (
         <div className="border border-bleu-1/40 p-6 bg-bleu-9/10 backdrop-blur-[35px] rounded-xl w-full flex items-center justify-between gap-8 max-md:gap-4 max-md:flex-col">
-            <div className="w-2/3 flex flex-col items-start justify-start gap-4 max-xl:w-3/5 max-lg:gap-2 max-md:w-full">
-                <span className="text-2xl text-gris-12 text-left font-semibold max-lg:text-xl">{titre}</span>
-                <p className="text-xl text-gris-12 text-left font-normal max-lg:text-base">
+            <div className="w-3/5 flex flex-col items-start justify-start gap-4 max-lg:gap-2 max-md:w-full">
+                <span className="text-3xl text-gris-12 text-left font-semibold max-lg:text-xl">{titre}</span>
+                <p className="text-2xl text-gris-12 text-left font-normal max-lg:text-base">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quod sed, dolorem dolor voluptas, 
                     fugit quae quasi beatae hic esse ipsa vel veritatis quam totam unde pariatur similique laboriosam minus.
                 </p>
