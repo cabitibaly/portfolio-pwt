@@ -1,4 +1,5 @@
 "use client"
+import FooterSection from "@/components/accueil/footer"
 import HeroContact from "@/components/contact/heroContact"
 import Navbar from "@/components/navigation/navbar"
 
@@ -7,6 +8,7 @@ const Contact = () => {
         <>        
             <Navbar />
             <HeroContact />
+            <FooterSection />
         </>
     )
 }
