@@ -1,5 +1,7 @@
 "use client"
 import HeroApropos from '@/components/a-propos/heroApropos'
+import NosValeurSection from '@/components/a-propos/nosValeursSection'
+import FooterSection from '@/components/accueil/footer'
 import Navbar from '@/components/navigation/navbar'
 
 const Apropos = () => {
@@ -7,6 +9,8 @@ const Apropos = () => {
         <>
             <Navbar />
             <HeroApropos />
+            <NosValeurSection />
+            <FooterSection />
         </>
     )
 }

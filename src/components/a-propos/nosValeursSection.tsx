@@ -15,18 +15,18 @@ const NosValeurSection = () => {
                 </div>                
             </div>
             <div className="overflow-x-hidden px-[100px] py-16 absolute z-30 top-0 left-0 w-full h-full flex flex-col items-center justify-start gap-12 max-896:px-4 max-896:py-8">                
-                <h2 className="text-5xl text-gris-12 text-center font-medium">Notre process</h2>
+                <h2 className="text-5xl text-gris-12 text-center font-medium">Nos valeurs</h2>
                 <div className="w-full flex flex-col items-center justify-start gap-10">
                     <div className="w-full flex items-center justify-between gap-8 max-lg:flex-col">
                         <InfoCard 
-                            titre="Nos valeurs"
+                            titre="Collaboration transparente"
                             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci maxime suscipit, animi dicta eaque 
                             ullam aspernatur consequatur est odit recusandae. Ipsum itaque consequatur officiis! Voluptatem dolor 
                             modi earum cumque itaque."
                             Icon={Rose}
                         />                        
                         <InfoCard 
-                            titre="Nos missions"
+                            titre="Tarification unique"
                             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci maxime suscipit, animi dicta eaque 
                             ullam aspernatur consequatur est odit recusandae. Ipsum itaque consequatur officiis! Voluptatem dolor 
                             modi earum cumque itaque."
@@ -34,7 +34,7 @@ const NosValeurSection = () => {
                         />                        
                     </div>
                     <InfoCard 
-                        titre="Notre équipe"
+                        titre="Service unique"
                         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci maxime suscipit, animi dicta eaque 
                         ullam aspernatur consequatur est odit recusandae. Ipsum itaque consequatur officiis! Voluptatem dolor 
                         modi earum cumque itaque."
