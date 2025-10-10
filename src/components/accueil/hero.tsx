@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Hero = () => {
     return (
-        <section className="overflow-hidden p-[100px] relative w-screen h-screen flex flex-col items-center justify-center gap-4 max-896:p-4 max-md:pt-10">
+        <section className="overflow-hidden px-[100px] pt-36 pb-28 relative w-screen min-h-screen flex flex-col items-center justify-center gap-4 max-896:px-4 max-md:justify-between max-md:pt-28 max-md:pb-20">
             <div className="absolute -top-40 -left-40 -z-40 filter blur-[1000px] w-[854px] h-[854px] bg-bleu-9/70 rounded-full max-896:bg-bleu-9/90 max-896:-top-80 max-896:left-20 max-896:blur-[400px] max-896:size-full"></div>
             <div className="absolute -top-32 -right-32 -z-40 filter blur-[1000px] w-[854px] h-[854px] bg-vert-9/70 rounded-full max-896:bg-vert-9/90 max-896:top-1/3 max-896:left-20 max-896:blur-[400px] max-896:size-full"></div>
             <div className="w-full flex flex-col items-center justify-center gap-6">
@@ -29,7 +29,7 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
-            <div className="absolute bottom-16 w-full flex flex-col items-center justify-center gap-4 max-md:px-4 max-md:bottom-4">
+            <div className="absolute bottom-16 w-full flex flex-col items-center justify-center gap-4 max-md:static max-md:px-4 max-md:bottom-0">
                 <span className="text-2xl text-gris-12 font-bold text-center max-md:text-xl">Ils nous font confiance</span>
                 <div className="w-full flex items-center justify-center space-x-4 max-md:carousel max-md:justify-normal">
                     <div className="px-4 py-2 carousel-item items-center justify-center rounded-full bg-bleu-1 text-gris-8 font-bold text-xl max-md:py-1 max-md:px-2 max-md:text-lg">

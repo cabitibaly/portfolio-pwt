@@ -2,7 +2,7 @@
 
 const HeroApropos = () => {
     return (
-        <section className="bubble-bg overflow-hidden p-[100px] relative w-screen h-screen flex flex-col items-center justify-center gap-4 max-896:p-4 max-md:pt-10">
+        <section className="bubble-bg overflow-hidden px-[100px] pt-36 pb-28 relative w-screen min-h-screen flex flex-col items-center justify-center gap-4 max-896:px-4 max-md:pt-28 max-md:pb-20">
             <div className="w-full flex flex-col items-center justify-center gap-10">
                 <h1 className="w-4/5 text-5xl text-gris-12 font-semibold text-center max-lg:w-full max-md:text-4xl">
                     La <span className="text-bleu-11">puissance</span> de la technologie, 

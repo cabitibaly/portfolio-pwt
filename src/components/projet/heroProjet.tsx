@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const HeroProjet = () => {
     return (
-        <section className="overflow-hidden p-[100px] relative w-screen h-screen flex flex-col items-center justify-center gap-4 max-896:p-4 max-md:pt-10">
+        <section className="overflow-hidden px-[100px] pt-36 pb-28 relative w-screen min-h-screen flex flex-col items-center justify-center gap-4 max-896:px-4 max-md:pt-28 max-md:pb-20">
             <div className="absolute -top-40 -left-40 -z-40 filter blur-[1000px] w-[854px] h-[854px] bg-rouge rounded-full max-896:bg-rouge max-896:-top-80 max-896:left-20 max-896:blur-[400px] max-896:size-full"></div>
             <div className="absolute -top-32 -right-32 -z-40 filter blur-[1000px] w-[854px] h-[854px] bg-jaune rounded-full max-896:bg-jaune max-896:top-1/3 max-896:left-20 max-896:blur-[400px] max-896:size-full"></div>
             <div className="w-full flex flex-col items-center justify-center gap-6">
