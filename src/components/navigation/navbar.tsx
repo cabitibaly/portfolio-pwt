@@ -11,6 +11,7 @@ const Navbar = () => {
     const menuRef = useRef<HTMLDivElement>(null)
     const bouttonRef = useRef<HTMLButtonElement>(null)
     const crossRef = useRef<HTMLButtonElement>(null)
+    const navRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
 
@@ -73,11 +74,25 @@ const Navbar = () => {
 
     }, [])
 
+    useEffect(() => {
+        const nav = navRef.current
+
+        if (!nav) return
+
+        gsap.fromTo(
+            nav,
+            {scale: 0, opacity: 0, transformOrigin: "center center"},
+            {scale: 1, opacity: 1, transformOrigin: "center center", duration: 1, ease: "power2.inOut"}
+        )
+
+    }, [])
+
     return (
         <>
             <nav 
+                ref={navRef}
                 className="
-                    border border-bleu-1/40 bg-gris-8/10 backdrop-blur-[35px] px-8 py-3 fixed z-50 top-12 left-1/2 -translate-1/2
+                    scale-0 border border-bleu-1/40 bg-gris-8/10 backdrop-blur-[35px] px-8 py-3 fixed z-50 top-12 left-1/2 -translate-1/2
                     w-4/5 rounded-full flex items-center justify-between gap-8 max-lg:w-[90%] max-md:w-full max-md:top-0 max-md:translate-0 max-md:left-0
                     max-md:rounded-none max-md:py-4 max-md:border-x-0 max-md:border-t-0
                 "
