@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import 'primereact/resources/themes/lara-light-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import { PrimeReactProvider } from "primereact/api";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -23,7 +26,9 @@ export default function RootLayout({
       <body
         className={`${raleway.className}`}
       >
-        {children}
+        <PrimeReactProvider>
+          {children}
+        </PrimeReactProvider>
       </body>
     </html>
   );
