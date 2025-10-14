@@ -1,8 +1,10 @@
 "use client"
-
+import { projets } from "@/data/projets"
 import Image from "next/image"
 
-const GallerieProjet = () => {
+const GallerieProjet = ({id}: {id: string}) => {
+    const projet = projets.find((projet) => projet.id === Number(id))!
+
     return (
         <>
             <section className="overflow-hidden gallerie-bg sticky top-0 bg-bleu-2 w-screen h-screen flex flex-col items-center justify-start">                
@@ -15,14 +17,17 @@ const GallerieProjet = () => {
                 <div className="w-full flex flex-col items-center justify-start gap-10">
                     <div className="w-full flex items-center justify-between gap-8 max-lg:flex-col max-md:gap-4">
                         <div className="relative w-full aspect-square rounded-2xl ">
-                            <Image src={"/projet-img.jpg"} fill alt="projet-img" className="w-full object-cover aspect-square rounded-2xl"/>
+                            <Image src={projet.images[0]} fill alt="projet-img-1" className="w-full object-cover aspect-square rounded-2xl"/>
                         </div>
                         <div className="relative w-full aspect-square rounded-2xl ">
-                            <Image src={"/projet-1.jpg"} fill alt="projet-img" className="w-full object-cover aspect-square rounded-2xl"/>
+                            <Image src={projet.images[1]} fill alt="projet-img-2" className="w-full object-cover aspect-square rounded-2xl"/>
                         </div>
                     </div>
                     <div className="relative w-full aspect-video rounded-2xl ">
-                        <Image src={"/projet-2.webp"} fill alt="projet-img" className="w-full object-cover aspect-video rounded-2xl"/>
+                        <Image src={projet.images[2]} fill alt="projet-img-3" className="w-full object-cover aspect-video rounded-2xl"/>
+                    </div>
+                    <div className="relative w-full aspect-video rounded-2xl ">
+                        <Image src={projet.images[3]} fill alt="projet-img-4" className="w-full object-cover aspect-video rounded-2xl"/>
                     </div>
                 </div>
             </div>

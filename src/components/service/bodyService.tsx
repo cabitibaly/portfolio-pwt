@@ -1,5 +1,5 @@
 "use client"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import ServiceCard from "../cards/serviceCard"
 import { useServiceCardAnimation } from "@/hooks/useServiceCardAnimation"
 import { services } from "@/data/services"
@@ -20,16 +20,11 @@ const BodyService = () => {
                             key={index} 
                             titre={service.titre} 
                             image={service.image} 
+                            description={service.description}
                         />
                     ))
                 }                
             </div>
-            <button
-                className="cursor-pointer border border-transparent shadow-xl px-4 py-2 text-lg text-bleu-1 font-bold bg-bleu-9 rounded-full flex items-center justify-center transition duration-200 ease-in-out 
-                hover:bg-transparent hover:border-bleu-9 hover:text-bleu-1 max-md:w-full"
-            >
-                charger plus de services
-            </button>
         </section>
     )
 }

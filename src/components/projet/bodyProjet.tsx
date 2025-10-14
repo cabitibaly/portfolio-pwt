@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProjetCard from '../cards/projetCard'
 import CallToAction from '../cards/callToAction'
+import { projets } from '@/data/projets'
 
 const BodyProjet = () => {
+    const [nbProjets, setNbProjets] = useState(6)
+    const [hasMore, setHasMore] = useState(true)
+
+    const toggleHasMore = () => {
+        const newNb = nbProjets + 3
+        setNbProjets(newNb)
+        setHasMore(newNb < projets.length)
+    }
+
+    useEffect(() => {
+
+        setHasMore(projets.length > nbProjets)
+
+    }, [])
+
     return (
         <>
             <section className="overflow-hidden py-16 px-4 sticky top-0 bg-gris-12 w-screen h-screen flex flex-col items-center justify-start" >
@@ -16,16 +32,22 @@ const BodyProjet = () => {
             </section>
             <div className="overflow-hidden relative top-0 z-40 px-[100px] py-16 w-screen min-h-screen bg-transparent flex flex-col items-center justify-start gap-12 max-896:px-4 max-896:py-8">                                
                 <div className="w-full grid grid-cols-3 gap-10 items-center justify-center max-xl:grid-cols-2 max-sm:grid-cols-1">
-                    <ProjetCard />
-                    <ProjetCard />
-                    <ProjetCard />                    
-                    <ProjetCard />
-                    <ProjetCard />
-                    <ProjetCard />                    
+                    {
+                        projets.slice(0, nbProjets).map((projet, index) => (
+                            <ProjetCard 
+                                key={index} 
+                                id={projet.id} 
+                                titre={projet.titre} 
+                                image={projet.images[2]} 
+                                description={projet.description}
+                            />
+                        ))
+                    }                  
                 </div>  
                 <button
-                    className="cursor-pointer border border-transparent shadow-xl px-4 py-2 text-lg text-bleu-1 font-bold bg-bleu-9 rounded-full flex items-center justify-center transition duration-200 ease-in-out 
-                    hover:bg-transparent hover:border-bleu-9 hover:text-bleu-1 max-md:w-full"
+                    onClick={() => toggleHasMore()}
+                    className={`cursor-pointer border border-transparent shadow-xl px-4 py-2 text-lg text-bleu-1 font-bold bg-bleu-9 rounded-full items-center justify-center transition duration-200 ease-in-out 
+                    hover:bg-transparent hover:border-bleu-9 hover:text-bleu-1 max-md:w-full ${hasMore ? "flex" : "hidden"}`}
                 >
                     charger plus de projets
                 </button>

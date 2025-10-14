@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjetCard from '../../cards/projetCard'
 import CallToAction from '../../cards/callToAction'
+import { projets } from '@/data/projets'
 
 const AutreProjet = () => {
     return (
@@ -16,9 +17,17 @@ const AutreProjet = () => {
             </section>
             <div className="relative top-0 z-40 px-[100px] py-16 w-screen min-h-screen bg-transparent flex flex-col items-center justify-start gap-12 max-896:px-4 max-896:py-8">                                
                 <div className="w-full grid grid-cols-3 gap-10 items-center justify-center max-xl:grid-cols-2 max-sm:grid-cols-1">
-                    <ProjetCard />
-                    <ProjetCard />
-                    <ProjetCard />                   
+                    {
+                        projets.slice(0, 3).map((projet, index) => (
+                            <ProjetCard 
+                                key={index} 
+                                id={projet.id} 
+                                titre={projet.titre} 
+                                image={projet.images[2]} 
+                                description={projet.description}
+                            />
+                        ))
+                    }                   
                 </div>
                 <CallToAction />                                  
             </div>

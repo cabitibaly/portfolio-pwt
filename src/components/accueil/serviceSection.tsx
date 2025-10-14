@@ -14,12 +14,13 @@ const ServiceSection = () => {
             <h2 className="text-5xl text-gris-12 text-center font-medium">Nos Services</h2>
             <div className="w-full flex flex-col items-center justify-start gap-8 max-md:gap-8">
                 {
-                    services.map((service, index) => (
+                    services.slice(0, 3).map((service, index) => (
                         <ServiceCard 
                             ref={el => {sercicesCardRef.current[index] = el}}
                             key={index} 
-                            titre={service.titre} 
+                            titre={service.titre}                             
                             image={service.image} 
+                            description={service.description}
                         />
                     ))
                 }             
