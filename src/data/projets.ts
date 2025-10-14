@@ -12,4 +12,17 @@ export const projets = [
             "https://res.cloudinary.com/de1fdl7zr/image/upload/v1760440802/iPhone_15_Mockup_Poster-min_r8qel4.png"
         ],
     },
+    {
+        id: 2,
+        titre: "Application de gestion de projet",
+        servicesFournis: ["UI/UX Design", "Développement full-stack"],  
+        href: "",      
+        description: "Cette application permet de gérer les stocks de produits et de leur stockage dans des locaux. Elle permet également de gérer les projets et leur suivi.",
+        images: [
+            "https://res.cloudinary.com/de1fdl7zr/image/upload/v1760445738/gs-4_pdofmh.jpg",
+            "https://res.cloudinary.com/de1fdl7zr/image/upload/v1760445740/gs-2_s0durg.png",
+            "https://res.cloudinary.com/de1fdl7zr/image/upload/v1760445741/gs-3_i0sbfh.png",
+            "https://res.cloudinary.com/de1fdl7zr/image/upload/v1760445744/gs-1_dbflxz.png"
+        ],
+    },
 ]

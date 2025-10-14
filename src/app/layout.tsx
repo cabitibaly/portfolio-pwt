@@ -4,6 +4,7 @@ import "./globals.css";
 import 'primereact/resources/themes/lara-light-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import { PrimeReactProvider } from "primereact/api";
+import LenisWrapper from "@/components/wrapper/lenisWrapper";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -26,9 +27,11 @@ export default function RootLayout({
       <body
         className={`${raleway.className}`}
       >
-        <PrimeReactProvider>
-          {children}
-        </PrimeReactProvider>
+        <LenisWrapper>
+          <PrimeReactProvider>
+            {children}
+          </PrimeReactProvider>
+        </LenisWrapper>
       </body>
     </html>
   );
